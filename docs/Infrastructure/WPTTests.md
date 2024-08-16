@@ -19,3 +19,11 @@ If you have the upstream WPT repository locally you can skip redownloading it by
 ```
 Tools/Scripts/import-w3c-tests web-platorm-tests/folder_to_import_here -l -s path_to_web_platform_tests
 ```
+
+## Export WPT Tests
+
+If you write a WPT test in WebKit you will need to export it, so the test does not get lost when re-syncing from upstream.
+
+```
+export-w3c-test-changes -b bugzilla_bug_id -g HEAD -c
+```
